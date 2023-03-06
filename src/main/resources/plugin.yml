@@ -1,0 +1,9 @@
+name: Clan
+version: 1.0
+main: mc.medveds.net.clan.Clan
+api-version: 1.19
+authors: [khr]
+description: Create clan
+
+commands:
+  clan:
