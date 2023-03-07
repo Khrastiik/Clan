@@ -5,5 +5,7 @@ api-version: 1.19
 authors: [khr]
 description: Create clan
 
+depend: [PlaceholderAPI]
+
 commands:
   clan:
