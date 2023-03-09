@@ -43,7 +43,7 @@ public class ClanName extends PlaceholderExpansion {
 
             ClanEntity clan;
 
-            //Цикл проверки сколько кланов существует выводит владельца и имя клана
+            //Цикл проверки сколько кланов существует, выводит владельца и имя клана
             for (int i = 0; i < allClans.size(); i++){
                 if (player.equals(allClans.get(i).getOwner())){
                     clan = allClans.get(i);
