@@ -13,6 +13,10 @@ public class ClansEntity {
         System.out.println("Клан был создан с названием: " + clan.getName());
     }
 
+    public void removeClan(int index){
+        clans.remove(index);
+    }
+
     public ArrayList<ClanEntity> listClan() {
         return clans;
     }

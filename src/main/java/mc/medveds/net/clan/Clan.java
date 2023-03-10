@@ -1,12 +1,10 @@
 package mc.medveds.net.clan;
 
-import mc.medveds.net.clan.command.CreateCMD;
-import mc.medveds.net.clan.command.CreateCompleter;
+import mc.medveds.net.clan.command.ClanCMD;
+import mc.medveds.net.clan.command.TabCompleter;
 import mc.medveds.net.clan.entity.ClansEntity;
 import mc.medveds.net.clan.placeholders.ClanName;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.Objects;
 
 public final class Clan extends JavaPlugin {
 
@@ -26,8 +24,8 @@ public final class Clan extends JavaPlugin {
         clans = new ClansEntity();
 
         //Регистрация команд
-        getPlugin().getCommand("clan").setExecutor(new CreateCMD());
-        getPlugin().getCommand("clan").setTabCompleter(new CreateCompleter());
+        getPlugin().getCommand("clan").setExecutor(new ClanCMD());
+        getPlugin().getCommand("clan").setTabCompleter(new TabCompleter());
 
         //Зарегистрировали PlaceholderAPI
         new ClanName().register();
